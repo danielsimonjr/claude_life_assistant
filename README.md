@@ -2,7 +2,7 @@
 
 A personal coach that lives in your filesystem. Claude becomes your mirror, witness, and challenger.
 
-![Claude Life Assistant](image.png)
+[Watch the demo](https://www.youtube.com/watch?v=cY3LvkB1EQM)
 
 ## What This Is
 
@@ -13,34 +13,18 @@ Instead of using Claude as a generic assistant, this system gives Claude:
 
 ## Installation
 
-### Option 1: Install as Plugin (Recommended)
-
-If you have access to a marketplace that hosts this plugin:
+### Option 1: Clone (Recommended)
 
 ```bash
-# Add the marketplace (if not already added)
-/plugin marketplace add <marketplace-url>
-
-# Install the plugin
-/plugin install life-assistant@<marketplace-name>
+git clone https://github.com/lout33/claude_life_assistant
+cd claude_life_assistant
 ```
 
-### Option 2: Install from Local Marketplace
+Then open with Claude Code and run `/setup-life`.
 
-1. Clone this repository
-2. In Claude Code, add it as a local marketplace:
-   ```bash
-   /plugin marketplace add ./path/to/claude-life-assistant
-   ```
-3. Install the plugin:
-   ```bash
-   /plugin install life-assistant@local
-   ```
+### Option 2: Include in Existing Project
 
-### Option 3: Manual Setup (Legacy)
-
-1. **Clone/copy this folder** to your project directory
-2. **Run `/setup-life`** — Claude asks you a few questions and fills in your profile
+Copy `CLAUDE.md` into your project root. Claude will read it automatically.
 
 ## Quick Start
 
@@ -165,6 +149,8 @@ If you want to edit manually, everything lives in **`CLAUDE.md`**:
 
 - Claude Code CLI (or any Claude interface that supports custom instructions)
 - A folder for your life system
+
+![Claude Life Assistant](image.png)
 
 ## Credits
 
